@@ -1,0 +1,272 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.main-content {
+    padding: 15px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.row {
+    display: flex;
+    gap: 10px;
+    align-items: stretch;
+    margin-bottom: 15px;
+}
+.column-left {
+    height: 50%;
+}
+
+.column-left, .column-right {
+    width: 50%;
+
+}
+
+.card {
+    border-radius: 4px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    padding: 12px;
+    margin-bottom: 10px;
+    border: 1px solid #eee;
+}
+
+.card-popular-book,
+.card-reports,
+.card-recent-reviews {
+    height: 100%;
+}
+
+.column-total-books,
+.column-total-users,
+.column-total-reviews {
+    flex: 1;
+}
+
+.card-header h5 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.card-body p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.top-custom-margin-bottom-large {
+    margin-bottom: 15px;
+}
+
+.custom-margin-bottom-large {
+    margin-bottom: 15px;
+}
+
+.list-group-item-action {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    text-decoration: none;
+    color: #333;
+    background-color: #fff;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.list-group-item-action:hover {
+    background-color: #f8f9fa;
+}
+
+.fas {
+    font-size: 16px;
+    margin-right: 8px;
+    color: #555;
+}
+
+.card-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #555;
+}
+
+.display-number {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+}
+
+.list-group {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.list-group-item {
+    background-color: #ffffff;
+    padding: 8px;
+    border: 1px solid #eee;
+    margin-bottom: 5px;
+    font-size: 14px;
+    border-radius: 4px;
+}
+
+.list-group-item strong {
+    font-weight: bold;
+}
+
+.list-group-item em {
+    font-style: italic;
+}
+
+.list-group-item .badge {
+    background-color: #555;
+    color: white;
+    font-size: 12px;
+    padding: 2px 6px;
+}
+
+.list-group-item small {
+    font-size: 12px;
+    color: #777;
+}
+
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+    }
+    .column-left,
+    .column-right {
+        width: 100%;
+    }
+}
+
+.btn-group {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.btn {
+    padding: 8px 15px;
+    font-size: 14px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.btn-primary, .btn-success, .btn-info {
+    background-color: #555;
+    color: white;
+}
+
+.btn-primary:hover, .btn-success:hover, .btn-info:hover {
+    background-color: #333;
+}
+
+.card {
+    border-radius: 4px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    margin-bottom: 15px;
+    border: 1px solid #eee;
+}
+
+.card-header {
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    border-bottom: 1px solid #eee;
+    background-color: #f9f9f9;
+}
+
+.card-body {
+    padding: 12px;
+    font-size: 14px;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+.table th,
+.table td {
+    padding: 8px;
+    text-align: left;
+    border: 1px solid #eee;
+}
+
+.table th {
+    background-color: #f8f8f8;
+    font-weight: bold;
+    color: #333;
+}
+
+.table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+@media (max-width: 768px) {
+    .btn-group {
+        flex-wrap: wrap;
+    }
+
+    .btn {
+        padding: 6px 12px;
+        font-size: 13px;
+    }
+
+    .main-content {
+        padding: 10px;
+        height: 100%;
+    }
+
+    .table {
+        font-size: 13px;
+    }
+    
+    .table th,
+    .table td {
+        padding: 6px;
+    }
+}
